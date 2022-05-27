@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PrixDeBillet</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<form name="form">
+<fieldset name =f1>
+    <fieldset name="f2" >
+        <legend class="lg">Examen Technologie web</legend>
+        <label >
+            Nom: <input type="text" id="txtNom">
+            Prenom: <input type="text" id="txtPrenom"><br/>
+        </label>
+     <label class="question">Question1:</label>
+        <label class="Q">A quelle balise se trouve l'attribut xml:lang?</label><br/>
+        <label>
+            <input type="radio" name="Q1" checked>title<br/>
+            <input type="radio" name="Q1">head<br/>
+            <input type="radio" name="Q1" id="html">html<br/>
+        </label>
+        <label class="question">Question2:</label>
+        <label class="Q">CSS est l'abreviation de?</label><br/>
+        <label>
+            <input type="radio" name="Q2" id="Q2" value="Cascading Style Sheets" checked>Cascading Style Sheets<br/>
+            <input type="radio" name="Q2" value="Cascading Sheets Style">Cascading Sheets Style<br/>
+
+        </label>
+
+        <label class="question">Question3:</label><br/>
+
+        <label>
+            le language html nous permet la creation des sites web <select name="choix" id="choix">
+            <option>dynamique</option>
+            <option>statique</option>
+        </select>
+
+        </label>
+
+    </fieldset>
+<label id  ="la">
+    <input type="button" id="correction" value="Correction" onclick="func()">
+</label>
+    <fieldset name ="f3" >
+        <legend class="lg">Resultat</legend>
+        <label id ="note">Note:</label>
+        <label><input type="text"  id="total" value="0"> /10
+        </label><br/>
+        <label id ="message"></label>
+
+    </fieldset>
+</fieldset>
+</form>
+</body>
+</html>

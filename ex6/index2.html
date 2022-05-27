@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex6</title>
+  <script language="JavaScript" type="text/javascript">
+function func (){
+  if (window.document.form.chk1.checked===false&&window.document.form.chk2.checked===false){
+    alert("veuillez cocher au moins une case!")
+
+  }
+  else {
+
+    if (window.document.form.chk1.checked&& window.document.form.chk2.checked === false) {
+      alert(window.document.form.chk1.value)
+    }  if (window.document.form.chk2.checked && window.document.form.chk1.checked === false) {
+      alert(window.document.form.chk2.value)
+    }
+    if(window.document.form.chk1.checked&& window.document.form.chk2.checked){
+      alert(window.document.form.chk1.value+" et "+window.document.form.chk2.value)
+    }
+  }
+
+
+}
+
+
+
+    </script>
+</head>
+<body>
+<form name="form">
+  <h3>
+    je metrise
+  </h3>
+<label>
+  <input type="checkbox"  name="chk1" value="CSS">
+</label>CSS
+  <p>
+  <label>
+    <input type="checkbox"  name="chk2" value="JavaScript">
+  </label>JavaScript
+  </p>
+  <input type="button" value="Choisir" onclick="func()">
+</form>
+</body>
+</html>

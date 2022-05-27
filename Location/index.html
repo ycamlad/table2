@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commande</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<form name="f">
+    <fieldset class="field" name="field1">
+        <fieldset>
+            <legend>Identification</legend>
+            <div>Information personnelle</div>
+            <table class =t1>
+            <tr>
+               <td> Nom: </td>
+                <td><input type="text" id="txtNom" class="txt" size="15"><br /></td>
+            </tr>
+                <tr>
+                    <td> Prenom:</td>
+                    <td> <input type="text" id="txtPrenom" class="txt" size="15"><br /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td> CIN:</td>
+                    <td>  <input type="text" id="txtCIN" name="txtCin" size="15"><br /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Réservation</legend>
+            <div>Votre commande</div>
+            <table class="t1">
+                <tr>
+                <td>Type de voiture:</td>
+                    <td class="radio">
+                    <p> <input type="radio" name="Voiture" checked >Mercedes</p>
+                    <p> <input type="radio" name="Voiture" checked>Renault</p>
+                    <p> <input type="radio" name="Voiture" checked>Citroen</p>
+                    <p> <input type="radio" name="Voiture" checked>BMW</p>
+                <tr>
+                    <td> Nombre de jour</td>
+                    <td> <input type="text" id="txtJour" value="1" size="15"></td>
+
+                </tr>
+
+
+            </table>
+
+        </fieldset>
+        <table id="t2">
+        <tr>
+
+            <td>Prix: <input type="text" id="txtPrix" value="0" class="txt" size="15"></td>
+        </tr>
+            <tr id="btn">
+                <td >
+                    <input type="button" id="btnCalculer" value="Calculer" onclick="func()">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+div{
+    text-align: center;
+    color:lightgray;
+    font-style: italic;
+}
+.t1{
+    margin: auto;
+    background-color: lightgray;
+}
+
+p{
+    height: 5px;
+}
+
+#t2{
+    background-color: gray;
+    align-content: center;
+    justify-content: center;
+
+}
+

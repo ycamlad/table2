@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" type="text/javascript">
+function func() {
+    let input = parseInt(window.document.form.Cin.value)
+    if(window.document.form.Nom.value === ""&&window.document.form.Cin.value === "") {
+        alert("veuillez remplir le ou les champs")
+
+
+
+
+    }
+    if(input!==Number(input)){
+        alert("la valeur entrez dans le Cin n'est pas numerique!")
+
+    }
+
+    if(window.document.form.Cin.value.length<8){
+        alert("la longueur du nombre est plus petite que 8")
+    }
+}
+
+
+    </script>
+</head>
+<body>
+<form name ="form">
+    <p>
+
+        <label>Nom:
+
+            <input type="text" name="Nom">
+        </label>
+    </p>
+    <label>CIN:
+        <input type="text" name="Cin">
+    </label>
+    <p>
+        <input type="button" value="Valider" name="Valider" ONclick="func()">
+    </p>
+</form>
+</body>
+</html>

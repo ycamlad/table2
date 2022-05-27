@@ -1,0 +1,43 @@
+.lg{
+    font-weight: bold;
+
+}
+
+.question{
+    text-decoration: underline;
+    font-style: italic;
+}
+.Q{
+margin: 25px;
+}
+
+#la{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#correction {
+
+    background-color: white;
+    align-self: flex-end;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+#correction:hover{
+    background-color: darkblue;
+    color: white;
+
+
+}
+#note{
+    margin-right: 70px;
+}
+#total{
+
+    width: 25px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex7</title>
+  <script language="JavaScript" type="text/javascript">
+    function func() {
+      let counter = 0;
+      for (let i = 0; i < 10; i++) {
+        if (window.document.form.Case[i].checked) counter++;
+
+      }
+
+
+      if(counter<3){
+        alert("veuillez cochez trois case! ")
+      }
+      else{
+        var total=0;
+        for (let j = 0; j <10;j++) {
+          if (window.document.form.Case[j].checked) {
+            total += parseInt(window.document.form.Case[j].value);
+
+            window.document.form.affichage.value = total;
+          }}
+        if(total>15){
+          alert("vous etes deja un expert")
+        }
+        else{
+          alert("vous etes un debutant")
+        }
+      }
+
+
+
+
+    }
+    </script>
+</head>
+<body>
+<form name="form">
+    <h3>Veuillez cocher trois cases:</h3>
+  <label>
+    <input type="checkbox" name="Case" value="-8"/> Case 1 <br />
+      <input type="checkbox" name="Case" value="5"/> Case 2 <br />
+      <input type="checkbox" name="Case" value="3"/> Case 3 <br />
+      <input type="checkbox" name="Case" value="10"/> Case 4 <br />
+      <input type="checkbox" name="Case" value="0"/> Case 5 <br />
+      <input type="checkbox" name="Case" value="-1"/> Case 6 <br />
+      <input type="checkbox" name="Case" value="-7"/> Case 7 <br />
+      <input type="checkbox" name="Case" value="15"/> Case 8 <br />
+      <input type="checkbox" name="Case" value="8"/> Case 9 <br />
+      <input type="checkbox" name="Case" value="3"/> Case 10 <br />
+      <input type="button" name="calculer" value="Calculer le score du jeu" onclick="func()"> <br />
+      <input type="text" name="affichage" ><br />
+  </label>
+
+</form>
+</body>
+</html>
